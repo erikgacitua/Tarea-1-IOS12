@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404@2x.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404@3x.jpg",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

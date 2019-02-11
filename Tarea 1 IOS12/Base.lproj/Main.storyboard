@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,55 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tarea_1_IOS12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy Pobre!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-7v-LaU">
+                                <rect key="frame" x="97" y="312.5" width="181" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404" translatesAutoresizingMaskIntoConstraints="NO" id="plZ-G7-9fK">
+                                <rect key="frame" x="16" y="80" width="343" height="202.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-xo-YNR">
+                                <rect key="frame" x="140" y="454.5" width="120" height="12.5"/>
+                                <state key="normal" title="Presione el Botón"/>
+                                <connections>
+                                    <action selector="ButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKe-Hq-tgb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="plZ-G7-9fK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="1tW-3r-hWP"/>
+                            <constraint firstItem="Yfz-7v-LaU" firstAttribute="top" secondItem="plZ-G7-9fK" secondAttribute="bottom" constant="30" id="Bfr-wu-zEt"/>
+                            <constraint firstItem="Yfz-7v-LaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FuO-9D-YV8"/>
+                            <constraint firstItem="AyN-xo-YNR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Gfl-eN-OCo"/>
+                            <constraint firstItem="AyN-xo-YNR" firstAttribute="top" secondItem="Yfz-7v-LaU" secondAttribute="bottom" constant="100" id="Jxb-qf-dwc"/>
+                            <constraint firstItem="Yfz-7v-LaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TO0-OO-FbL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AyN-xo-YNR" secondAttribute="bottom" constant="200" id="fMp-7a-Bbc"/>
+                            <constraint firstItem="AyN-xo-YNR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="fwv-F4-X8Z"/>
+                            <constraint firstItem="plZ-G7-9fK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="twN-xU-0Vz"/>
+                            <constraint firstItem="plZ-G7-9fK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wQe-sh-eES"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Button" destination="AyN-xo-YNR" id="Usn-s4-f5c"/>
+                        <outlet property="Imagen" destination="plZ-G7-9fK" id="bXP-Lm-6lL"/>
+                        <outlet property="Label" destination="Yfz-7v-LaU" id="q6x-g2-PTn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404" width="100.5" height="74"/>
+    </resources>
 </document>
