@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,40 +15,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tarea_1_IOS12" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404" translatesAutoresizingMaskIntoConstraints="NO" id="plZ-G7-9fK">
-                                <rect key="frame" x="16" y="80" width="382" height="237"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-xo-YNR">
-                                <rect key="frame" x="140" y="489" width="134" height="47"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-xo-YNR">
+                                <rect key="frame" x="77.5" y="311.5" width="223" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Presione el Botón"/>
                                 <connections>
                                     <action selector="ButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKe-Hq-tgb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Soy Pobre!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-7v-LaU">
-                                <rect key="frame" x="117" y="379" width="181" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soy Pobre!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-7v-LaU">
+                                <rect key="frame" x="97" y="58" width="181" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404" translatesAutoresizingMaskIntoConstraints="NO" id="plZ-G7-9fK">
+                                <rect key="frame" x="137.5" y="162.5" width="100" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="plZ-G7-9fK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="1tW-3r-hWP"/>
-                            <constraint firstItem="Yfz-7v-LaU" firstAttribute="top" secondItem="plZ-G7-9fK" secondAttribute="bottom" constant="30" id="Bfr-wu-zEt"/>
-                            <constraint firstItem="Yfz-7v-LaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FuO-9D-YV8"/>
-                            <constraint firstItem="AyN-xo-YNR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Gfl-eN-OCo"/>
-                            <constraint firstItem="AyN-xo-YNR" firstAttribute="top" secondItem="Yfz-7v-LaU" secondAttribute="bottom" constant="100" id="Jxb-qf-dwc"/>
-                            <constraint firstItem="Yfz-7v-LaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TO0-OO-FbL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AyN-xo-YNR" secondAttribute="trailing" constant="140" id="Xio-8I-qDj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AyN-xo-YNR" secondAttribute="bottom" constant="200" id="fMp-7a-Bbc"/>
-                            <constraint firstItem="AyN-xo-YNR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="fwv-F4-X8Z"/>
-                            <constraint firstItem="plZ-G7-9fK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="twN-xU-0Vz"/>
-                            <constraint firstItem="plZ-G7-9fK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wQe-sh-eES"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -63,6 +54,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404" width="100.33333587646484" height="73.666664123535156"/>
+        <image name="kisspng-poverty-begging-cartoon-clip-art-poor-man-5aa29aa0e593d3.1719169115206058569404" width="100.5" height="74"/>
     </resources>
 </document>

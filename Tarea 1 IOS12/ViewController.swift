@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonAction(_ sender: UIButton) {
         print("Hola mundo, esto es una prueba") 
-        self.Label.text = "Soy rico!"
+        self.Label.text = "Soy rico !"
         self.Imagen.image = UIImage(named: "depositphotos_175394942-stock-illustration-money-on-transparent")
     }
     
